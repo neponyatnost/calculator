@@ -1,0 +1,71 @@
+body {
+  margin: 0 auto;
+  user-select: none;
+}
+
+.calculator {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 400px;
+  background-color: grey;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: white; */
+  background: linear-gradient(to right, #dddddd, #6f7b7d);
+  height: 60px;
+  border-radius: 10px;
+  font-size: 30px;
+  border: 1px solid white;
+}
+
+.button:hover {
+  color: rgb(207, 148, 148);
+}
+
+.button:active {
+  color: rgb(75, 75, 135);
+}
+
+form {
+  max-width: 100%;
+
+}
+
+input {
+  width: 354px;
+  height: 60px;
+  border: none;
+  outline: none;
+  text-align: right;
+  border-radius: 10px;
+  color: black;
+  font-size: 40px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  padding: 0;
+  margin: 0;
+}
+
+.equal {
+  grid-area: 3 / 4 / 7 / 5;
+  height: 300px;
+  background: linear-gradient(rgb(159, 159, 226), rgb(82, 82, 232));
+  color: white;
+}
+
+.ac {
+  background: linear-gradient(rgb(240, 164, 164), red);
+  color: white;
+}
